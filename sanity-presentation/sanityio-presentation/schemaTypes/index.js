@@ -4,4 +4,4 @@ import post from './post'
 import author from './author'
 import onePage from './onePage'
 
-export const schemaTypes = [post, author, category, blockContent]
+export const schemaTypes = [post, author, category, blockContent, onePage]

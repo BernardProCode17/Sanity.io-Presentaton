@@ -24,7 +24,8 @@ export default defineType({
       defineField({
          name: 'long_text',
          title: 'Add Content',
-         type: 'block text'
+         type: 'array',
+         of: [{type: 'block'}],
       }),
       defineField({
          name: 'number',
@@ -79,8 +80,8 @@ export default defineType({
       }),
       // More complex types of fields
       defineField({
-         name: 'list',
-         title: 'Array list',
+         name: 'object_list',
+         title: 'Object Array',
          type: 'array',
          of: [{
             type: 'object',
