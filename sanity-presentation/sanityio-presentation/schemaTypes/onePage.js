@@ -25,7 +25,7 @@ export default defineType({
          name: 'long_text',
          title: 'Add Content',
          type: 'array',
-         of: [{type: 'block'}],
+         of: [{ type: 'block' }],
       }),
       defineField({
          name: 'number',
@@ -76,7 +76,7 @@ export default defineType({
          name: 'list',
          title: 'Array list',
          type: 'array',
-         of:[{type: 'string'}, {type: 'url'}]
+         of: [{ type: 'string' }, { type: 'url' }]
       }),
       // More complex types of fields
       defineField({
@@ -87,9 +87,15 @@ export default defineType({
             type: 'object',
             fields: [
                { name: 'title', type: 'string', title: 'Title' },
-               { name: 'description', type: 'string', title: 'Description' }
+               { name: 'description', type: 'string', title: 'Description' },
+               { name: 'link', type: 'url', title: 'Link' },
+               { name: 'number', type: 'number', title: 'Number' },
             ]
          }]
-      })
+      }),
+      // Presentation Demo
+      // defineField([
+
+      // ])
    ]
 })
