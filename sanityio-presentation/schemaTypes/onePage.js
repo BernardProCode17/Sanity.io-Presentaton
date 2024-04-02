@@ -94,10 +94,8 @@ export default defineType({
          }]
       }),
       // Presentation Demo
-      defineField([
-         name: 'Text',
-         title: 'Text',
-         type: 'string'
-      ]);
+      // defineField([
+
+      // ])
    ]
 })
